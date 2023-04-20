@@ -15,7 +15,7 @@ function AddTaskForm({ addTask }) {
     <form onSubmit={handleSubmit}>
       <input
         type="text"
-        className="form-control"
+        className="form-control input-title"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />

@@ -43,7 +43,6 @@ form {
 }
 
 .form-control {
-  width: 100%;
   padding: 10px;
   border: 1px solid #e6e6e6;
   border-radius: 5px;
@@ -59,20 +58,26 @@ form {
 ul {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1rem;
   align-content: center;
 }
 
 .grid-list-item {
   line-height: 2.2;
-  background-color: white;
+  background-color: rgba(147, 195, 197, 0.699);
   padding: 1rem;
+  border-radius: 6px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
+}
+
+.input-title {
+  width: 90%;
 }
 
 .edit-list {
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   float: left;
